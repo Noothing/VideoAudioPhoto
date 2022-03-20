@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogFragment.AudioViewerFragment">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/audioPauseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/play_pause"
+            android:buttonTint="@color/black"
+            android:elevation="3dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp" />
+
+        <SeekBar
+            android:id="@+id/audioSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/audioTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:10" />
+
+    </LinearLayout>
+
+</FrameLayout>

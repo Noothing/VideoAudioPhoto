@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_baseline_play_arrow_24"
+        android:state_checked="true">
+        <shape>
+            <size android:width="30dp"
+                android:height="30dp"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_baseline_play_arrow_24"
+        android:state_pressed="true">
+        <shape>
+            <size android:width="30dp"
+                android:height="30dp"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="false"
+        android:drawable="@drawable/ic_baseline_pause_24">
+        <shape>
+            <size android:width="30dp"
+                android:height="30dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false"
+        android:drawable="@drawable/ic_baseline_pause_24">
+        <shape>
+            <size android:width="30dp"
+                android:height="30dp"/>
+        </shape>
+    </item>
+</selector>
